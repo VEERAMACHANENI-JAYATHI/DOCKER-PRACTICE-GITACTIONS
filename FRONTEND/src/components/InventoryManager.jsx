@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './style.css';
-import config from './config.js';
 
 const InventoryManager = () => {
   const [items, setItems] = useState([]);
@@ -17,7 +16,7 @@ const InventoryManager = () => {
   const [message, setMessage] = useState('');
   const [editMode, setEditMode] = useState(false);
 
-  const baseUrl = `${config.url}/inventoryapi`;
+  const baseUrl = `${import.meta.env.VITE_API_URL}/inventoryapi`;
 
   const itemKeys = ['id', 'name', 'category', 'stock', 'price'];
 
