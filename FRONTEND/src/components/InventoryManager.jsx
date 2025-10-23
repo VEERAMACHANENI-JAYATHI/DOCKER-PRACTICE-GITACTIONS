@@ -16,7 +16,7 @@ const InventoryManager = () => {
   const [message, setMessage] = useState('');
   const [editMode, setEditMode] = useState(false);
 
-  const baseUrl = `${import.meta.env.VITE_API_URL}/inventoryapi`;
+  const baseUrl = `${import.meta.env.VITE_API_URL=" "}/inventoryapi`;
 
   const itemKeys = ['id', 'name', 'category', 'stock', 'price'];
 
